@@ -6,9 +6,10 @@ export default defineConfig({
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: "/vitepress-logo-mini.svg",
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '主页', link: '/' },
+      { text: 'Examples', link: '/testdom/' }
     ],
 
     sidebar: [

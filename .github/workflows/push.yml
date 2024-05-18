@@ -1,0 +1,21 @@
+name: zhFlow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+   build-and-deploy:
+      runs-on: ubuntu-latest
+
+      steps:
+        # 检出代码到工作目录
+        - name: Checkout
+          uses: actions/checkout@v4
+          with:
+            fetch-depth: 0
+        - run: npx changelogithub
+          env:
+            GITHUB_TOKEN: '${{ secrets.MY_GITHUB_TOKEN }}'
+        

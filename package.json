@@ -1,10 +1,18 @@
 {
-  "devDependencies": {
+  "name": "zhblog",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
     "vitepress": "^1.1.4"
   },
+  "devDependencies": {},
   "scripts": {
     "docs:dev": "vitepress dev docs --port 1234",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs --port 1234"
-  }
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
